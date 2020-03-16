@@ -6,7 +6,7 @@ A docker image with hugo and firebase-cli installed
 Here the example of `.gitlab-ci.yml` for Hugo `0.67.1`:
 
 ```yaml
-image: tsubasa/docker-hugo-firebase:0.67.1
+image: tsubasak111/docker-hugo-firebase:0.67.1
 
 before_script:
   - hugo version
