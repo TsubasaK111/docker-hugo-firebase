@@ -3,10 +3,10 @@ A docker image with hugo and firebase-cli installed
 
 # Using on Gitlab CI
 
-Here the example of `.gitlab-ci.yml` for Hugo `0.31.1`:
+Here the example of `.gitlab-ci.yml` for Hugo `0.61.0`:
 
 ```yaml
-image: nohitme/hugo-firebase:0.31.1
+image: nohitme/hugo-firebase:0.61.0
 
 before_script:
   - hugo version
