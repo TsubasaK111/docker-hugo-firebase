@@ -4,7 +4,7 @@ FROM node:11.5-alpine
 LABEL maintainer="nohitme@gmail.com"
 
 # variables
-ENV HUGO_VERSION 0.53
+ENV HUGO_VERSION 0.61
 
 # install hugo
 RUN set -x && \
@@ -20,4 +20,4 @@ RUN set -x && \
   apk del --purge wget && \
   # install firebase-cli
   # use --unsafe-perm to solve the issue: https://github.com/firebase/firebase-tools/issues/372
-  npm install -g firebase-tools --unsafe-perm
+  npm install -g firebase-tools@latest --unsafe-perm
