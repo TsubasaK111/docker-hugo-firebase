@@ -1,4 +1,4 @@
-FROM node:11.5-alpine
+FROM node:11.5
 
 # labels
 LABEL maintainer="nohitme@gmail.com"
@@ -21,3 +21,5 @@ RUN set -x && \
   # install firebase-cli
   # use --unsafe-perm to solve the issue: https://github.com/firebase/firebase-tools/issues/372
   npm install -g firebase-tools@latest --unsafe-perm
+  # add dependencies for implementing Basic Auth via Firebase Functions
+  npm install -g express basic-auth-connect
