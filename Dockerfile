@@ -23,3 +23,4 @@ RUN set -x && \
   npm install -g firebase-tools@latest --unsafe-perm
   # add dependencies for implementing Basic Auth via Firebase Functions
   npm install -g express basic-auth-connect
+  npm install -g eslint --save-dev
