@@ -20,7 +20,7 @@ RUN set -x && \
   apk del --purge wget && \
   # install firebase-cli
   # use --unsafe-perm to solve the issue: https://github.com/firebase/firebase-tools/issues/372
-  npm install -g firebase-tools@latest --unsafe-perm
+  npm install -g firebase-tools@latest --unsafe-perm && \
   # add dependencies for implementing Basic Auth via Firebase Functions
-  npm install -g express basic-auth-connect
+  npm install -g express basic-auth-connect && \
   npm install -g eslint --save-dev
